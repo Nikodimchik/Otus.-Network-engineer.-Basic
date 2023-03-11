@@ -34,7 +34,7 @@
     *C1#configure terminal*  
     *C1(config)#service password-encryption*  
   * ###### Изменим баннерное сообщение.
-    *C1(config)#banner motd +Hello there! It's me C1!+*
+    *C1(config)#banner motd +Hello there! It's me C!+*
   * ###### Зададим интерфейс VLAN и поднимем его.
     *C1(config)#interface vlan 1*  
     *C1(config-if)#ip address 192.168.1.100 255.255.255.0*  
