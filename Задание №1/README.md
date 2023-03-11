@@ -13,4 +13,4 @@
 
   1. <image src="./Console.PNG" alt="Подключение консольным кабелем.">
   
-  2. <image src="./CLI.PNG" alt="Окно коммандной оболочки IOS.">
+  2. <image src="./cli.PNG" alt="Окно коммандной оболочки IOS.">
