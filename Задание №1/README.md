@@ -37,17 +37,22 @@
     *C1(config)#banner motd +Hello there! It's me C1!+*
   * ###### Зададим интерфейс VLAN и поднимем его.
     *C1(config)#interface vlan 1*  
-    *C1(config-if)#ip address 192.168.1.100 255.255.255.0*
+    *C1(config-if)#ip address 192.168.1.100 255.255.255.0*  
     *C1(config-if)#no shutdown*   
     >%LINK-5-CHANGED: Interface Vlan1, changed state to up  
-    >%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up  
-  *C1(config-if)#end*    
+    %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+  
+    *C1(config-if)#end*    
   * ###### Перезапишем конфиг по умолчанию на текущий.
     *C1#copy running-config startup-config*  
     >Destination filename [startup-config]?  
-    >Building configuration...  
-    >[OK]  
+    Building configuration...  
+    [OK]  
   * ###### Перезагрузим коммутатор.
     *C1#reload*  
 ### <a name="5"> 5. Использовать IP-адрес управления для удаленного управления коммутатором.</a>
+  * Добавим еще один компьютер и соединим его с коммутатором через Ethernet.  
+  * Зададим интерфейсу компьютера ip адрес 192.168.1.102.  
+  * Подключимся с помощью Telnet / SSH Client к нашему коммутатору  
+ <image src="./telnet.PNG" alt="Telnet подключение к коммутатору.">
   
