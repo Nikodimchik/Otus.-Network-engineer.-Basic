@@ -26,7 +26,7 @@
     *Switch(config)#hostname C1*
   * ###### Задаём пароль рута на вход.
     *C1(config)#enable secret class*
-  * ###### Задаём пароль для виртуальных терминалов, разрешаем подключение по telnet, и закодируем хранимые пароли.
+  * ###### Задаём пароль для виртуальных терминалов, разрешаем подключение по telnet и закодируем хранимые пароли.
     *C1(config)#line vty 0 15*  
     *C1(config-line)#password cisco*  
     *C1(config-line)#transport input telnet*  
