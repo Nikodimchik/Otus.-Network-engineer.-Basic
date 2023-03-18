@@ -44,7 +44,8 @@
       <image src="./ARPB.PNG" alt="arp запрос.">  
     Посылаем эхо-запросы на остальные устройства:  
       <image src="./pingB.PNG" alt="Ping запрос.">  
-     
+    Проверяем таблицу Mac-адресов на коммутаторе S2:
+      <image src="./MacS2-2.PNG" alt="Ping запрос.">  
 
 
     
