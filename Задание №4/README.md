@@ -19,6 +19,6 @@
   <image src="./r1_ipv6_brief.png" alt="Проверка.">  
   
   * Вручную ввести локальные адреса канала на каждом интерфейсе Ethernet на R1.  
-    <image src="./r1_ipv6_1ll.png" alt="Link local 1.">
+    <image src="./r1_ipv6_0ll.png" alt="Link local 1.">
     <image src="./r1_ipv6_2ll.png" alt="Link lokal 2.">  
   
