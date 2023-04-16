@@ -8,6 +8,7 @@
 ### [7. Вопрос для повторения.](#7)
 # Решение  
 <image src="./conf.PNG" alt="Configuration.">  
+ 
 ### <a name="1"> 1. Настроить маршрутизатор.</a>  
   * enable  
   * conf t  
