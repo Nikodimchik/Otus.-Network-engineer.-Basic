@@ -7,6 +7,7 @@
 ### [6. Настройка протокола SSH с использованием интерфейса командной строки (CLI) коммутатора.](#6)
 ### [7. Вопрос для повторения.](#7)
 # Решение  
+<image src="./conf.png" alt="Конфигурация.">  
 ### <a name="1"> 1. Настроить маршрутизатор.</a>  
   * enable  
   * conf t  
@@ -75,7 +76,7 @@
   * end  
   * copy running-config startup-config  
   * SSH подключение с PC-A  
-  <image src="./pc-ssh_s.png" alt="SSH PC-a.">   
+  <image src="./pc_ssh_right.PNG" alt="SSH PC-a.">   
     
 ### <a name="6"> 6. Настройка протокола SSH с использованием интерфейса командной строки (CLI) коммутатора.</a>  
   <image src="./s1-ssh.png" alt="SSH PC-a.">  
