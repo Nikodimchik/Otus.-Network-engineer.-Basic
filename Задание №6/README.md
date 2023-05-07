@@ -124,6 +124,7 @@
   > interface gigabitEthernet 0/0/1.1000  
   > description native vlan  
   > encapsulation dot1Q 1000 native  
+  > no shutdown  
     
 ### <a name="10"> 10. Проверка работы маршрутизации между VLAN.</a>  
   * Эхо-запрос с PC-A на шлюз по умолчанию.  
