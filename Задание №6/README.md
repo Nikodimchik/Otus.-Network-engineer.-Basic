@@ -63,7 +63,7 @@
   > switchport access vlan 999  
     
 ### <a name="6"> 6. Назначить сети VLAN соответствующим интерфейсам коммутатора.</a>  
-  >S1(config)#interface f0/6 
+  >S1(config)#interface f0/6  
   >S1(config-if)#switchport access vlan 20  
   >S1(config-if)#no shutdown   
     
@@ -96,7 +96,7 @@
   <image src="./S1-Trunk_Check.PNG" alt="Trunk Check.">  
     
   Что произойдет, если G0/0/1 на R1 будет отключен?  
-  * Мы не увидим этого замечательного сообщения на S1:
+  * Мы не увидим этого замечательного сообщения на S1:  
   > %LINK-5-CHANGED: Interface FastEthernet0/5, changed state to up  
 
   > %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to up  
@@ -131,7 +131,7 @@
   * Эхо-запрос с PC-A на PC-B.  
     <image src="./ping-PC-A-PC-B.PNG" alt="ping-PC-A-PC-B.PNG">  
   * Эхо-запрос с PC-A на коммутатор S2.  
-    <image src="./Ping-PC-A-S2.PNG" alt="Ping-PC-A-S2.PNG"> 
+    <image src="./Ping-PC-A-S2.PNG" alt="Ping-PC-A-S2.PNG">  
   * Команда tracert с PC-B на адрес PC-A.  
-    <image src="./tracert-PC-B-PC-A.PNG" alt="tracert-PC-B-PC-A.PNG">
+    <image src="./tracert-PC-B-PC-A.PNG" alt="tracert-PC-B-PC-A.PNG">  
      
