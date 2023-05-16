@@ -44,7 +44,7 @@
     > shutdown  
     > interface range fastEthernet 0/1-4  
     > switchport mode trunk  
-    > interface range fastEthernet 0/2, fastEthernet 0/4
+    > interface range fastEthernet 0/2, fastEthernet 0/4  
     > no shutdown  
  
   <image src="./S1-Sp-tree1.PNG" alt="S1-Sp-tree.">   
@@ -67,16 +67,16 @@
     > S2:Fa0/2  
     
   * Почему протокол spanning-tree выбрал этот порт в качестве невыделенного (заблокированного) порта?
-    > Во избежание закольцованности траффика корневой узел заблокировал порт с максимальным значением адрес + порт.    
+    > У него максимальное значение BID.    
 
 ### <a name="4"> 4.	Наблюдение за процессом выбора протоколом STP порта, исходя из стоимости портов.</a>     
-  > S2(config)#interface fastEthernet 0/4
-  > S2(config-if)#spanning-tree vlan 1 cost 18
+  > S2(config)#interface fastEthernet 0/4  
+  > S2(config-if)#spanning-tree vlan 1 cost 18  
   
   <image src="./S1-Sp-tree2.PNG" alt="S1-Sp-tree.">   
-  <image src="./S2-Sp-tree2.PNG" alt="S2-Sp-tree."> 
+  <image src="./S2-Sp-tree2.PNG" alt="S2-Sp-tree.">  
    
-   > S2(config-if)#no spanning-tree vlan 1 cost 18  
+  > S2(config-if)#no spanning-tree vlan 1 cost 18  
   * Почему протокол spanning-tree заменяет ранее заблокированный порт на назначенный порт и блокирует порт, который был назначенным портом на другом коммутаторе?  
     > Потому что, сначала пересчитывается стоимость для корневого порта, а затем (на том же узле) ставится назначенный порт.  
     
@@ -89,7 +89,7 @@
     <image src="./S2-Sp-tree3.PNG" alt="S2-Sp-tree.">  
       
      * Какой порт выбран протоколом STP в качестве порта корневого моста на каждом коммутаторе некорневого моста?  
-      > Fa0/3
+      > Fa0/3  
       
      * Почему протокол STP выбрал эти порты в качестве портов корневого моста на этих коммутаторах?  
       > Потому что это порты с меньшим номером, чем 4.  
@@ -99,8 +99,8 @@
        > Стоимость интерфейса.  
       
       * Если первое значение на двух портах одинаково, какое следующее значение будет использовать протокол STP при выборе порта?  
-       > Bridge ID.
+       > Bridge ID.  
       
       * Если оба значения на двух портах равны, каким будет следующее значение, которое использует протокол STP при выборе порта?  
-       > Port ID
+       > Port ID  
      
