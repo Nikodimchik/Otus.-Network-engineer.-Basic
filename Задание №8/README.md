@@ -3,8 +3,8 @@
 ### [2. Настроить базовые параметры для маршрутизаторов.](#2)
 ### [3. Проверка назначения адреса SLAAC от R1.](#3)
 ### [4.	Настройка и проверка сервера DHCPv6 на R1.](#4)
-### [5. Наблюдение за процессом выбора протоколом STP порта, исходя из приоритета портов.](#5)
-### [6. Вопросы для повторения.](#6)
+### [5. Настройка сервера DHCPv6 с сохранением состояния на R1.](#5)
+### [6. Настройка R2 в качестве агента DHCP-ретрансляции.](#6)
 
 # Решение   
 ### <a name="1"> 1. Создать сеть согласно топологии.</a>  
@@ -42,4 +42,27 @@
   * R1(config)#ipv6 route 2001:db8:acad:3::/64 2001:db8:acad:2::2  
   * R2(config)#ipv6 route 2001:db8:acad:1::/64 2001:db8:acad:2::1  
   
-<image src="./Ping-Stateless.PNG" alt="IPCONFIG."> 
+<image src="./Ping-Stateless.PNG" alt="IPCONFIG.">  
+
+### <a name="5"> 5. Настройка сервера DHCPv6 с сохранением состояния на R1.</a>  
+Создаем новый пул с префиксом:  
+  
+  * R1(config)#ipv6 dhcp pool R2-STATEFUL  
+  * R1(config)#address prefix 2001:db8:acad:3:aaa::/80  
+  * R1(config)#dns-server 2001:db8:acad::254  
+  * R1(config)#domain-name STATEFUL.com  
+  
+Настраивем интерфейс G0/0/0 на R1:  
+  
+  * R1(config-if)#ipv6 dhcp server R2-STATEFUL  
+  
+Проверка назначения адреса SLAAC на PC-B.  
+  
+<image src="./slaac-pc-B.PNG" alt="SLAAC на PC-B">   
+  
+### <a name="6"> 6. Настройка R2 в качестве агента DHCP-ретрансляции</a>  
+
+  * R2(config-if)#ipv6 nd managed-config-flag  
+  * R2(config-if)#ipv6 dhcp relay destination 2001:db8:acad:2::1 g0/0/0  
+
+К сожалению, последняя команда не работает в CISCO Packet Tracer :disappointed_relieved:
