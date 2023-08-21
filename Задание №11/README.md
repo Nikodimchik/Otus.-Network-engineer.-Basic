@@ -24,9 +24,9 @@
 
 ### <a name="4"> 4. Настройка все сетевые устройства для базовой поддержки SSH.</a>  
 
-> username SSHadmin secret 5 $1$mERr$jnsDknF4Wwkgx2tzKw49w1
-> ip ssh version 2
-> ip domain-name ccna-lab.com
+> username SSHadmin secret 5 $1$mERr$jnsDknF4Wwkgx2tzKw49w1  
+> ip ssh version 2  
+> ip domain-name ccna-lab.com  
 > line vty 0 4  
 > login local  
 > transport input ssh  
