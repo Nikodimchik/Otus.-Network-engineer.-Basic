@@ -68,12 +68,12 @@
 ### <a name="4"> 4. Настройка и проверка статического NAT для IPv4.</a>  
 
 > R1:ip nat inside source static 192.168.1.2 209.165.200.229  
-> show ip nat translations  
+> R1:show ip nat translations  
 
 <image src="./static1.PNG" alt="Static.">  
 
 > PC-A:ping 209.165.200.1  
-> show ip nat translations  
+> R1:show ip nat translations  
 
 <image src="./static2.PNG" alt="Static.">  
 
