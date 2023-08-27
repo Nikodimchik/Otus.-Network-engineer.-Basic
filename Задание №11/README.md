@@ -52,7 +52,7 @@
   > interface GigabitEthernet0/0/1.30  
   > ip access-group MYLIST2 out  
 
-<image src="./ACL2.PNG" alt="ACL.">  
+<image src="./ACL3.PNG" alt="ACL.">  
 
 | От | Протокол | Назначение | Отметка |
 |----------|----------|----------|----------|
