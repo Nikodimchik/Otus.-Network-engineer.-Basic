@@ -45,7 +45,11 @@
 
 <image src="./s2-dhcp-snooping.PNG" alt="DHCP snooping.">  
 
+Получаем новый ip...
+
 <image src="./pc-b-dhcp1.PNG" alt="DHCP snooping.">  
+
+Пытаемся сделать это ещё раз (безуспешно)...
 
 <image src="./pc-b-dhcp2.PNG" alt="DHCP snooping.">  
 
