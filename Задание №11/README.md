@@ -47,9 +47,12 @@
 ### <a name="6"> 6. Настройка и проверка списков контроля доступа (ACL).</a>  
 
   > interface GigabitEthernet0/0/1.40  
-  > ip access-group MYLIST out  
+  > ip access-group MYLIST out
 
-<image src="./ACL.PNG" alt="ACL.">  
+  > interface GigabitEthernet0/0/1.30  
+  > ip access-group MYLIST2 out  
+
+<image src="./ACL2.PNG" alt="ACL.">  
 
 | От | Протокол | Назначение | Отметка |
 |----------|----------|----------|----------|
