@@ -77,23 +77,23 @@
 
   R1 Config:  
 
-<image src="./r1-conf.PNG" alt="R1">  
+<image src="./n-r1v.PNG" alt="R1">  
 
   R2 Config:
 
-<image src="./r2-conf.PNG" alt="R1">  
+<image src="./n-r2.PNG" alt="R1">  
 
   R1 DHCP настройки:  
 
-<image src="./r1-dhcp.PNG" alt="R1">  
+<image src="./n-dhcp.PNG" alt="R1">  
 
 ### <a name="8"> 8. Проверка работы DHCPv4</a>  
 
   PC-A:  
 
-<image src="./pc-a.PNG" alt="R1">  
+<image src="./n-pc-a.PNG" alt="R1">  
 
   PC-B:  
 
-<image src="./pc-b.PNG" alt="R1">  
+<image src="./n-pc-b.PNG" alt="R1">  
 
