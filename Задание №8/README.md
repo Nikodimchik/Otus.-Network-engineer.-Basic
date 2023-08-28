@@ -95,5 +95,5 @@
 
   PC-B:  
 
-<image src="./n-pcb.PNG" alt="R1">  
+<image src="./n-pc2.PNG" alt="R1">  
 
