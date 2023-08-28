@@ -91,9 +91,9 @@
 
   PC-A:  
 
-<image src="./n-pc-a.PNG" alt="R1">  
+<image src="./pc-a.PNG" alt="R1">  
 
   PC-B:  
 
-<image src="./n-pc-b.PNG" alt="R1">  
+<image src="./n-pcb.PNG" alt="R1">  
 
