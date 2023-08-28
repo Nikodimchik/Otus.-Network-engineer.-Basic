@@ -81,7 +81,7 @@
 
   R2 Config:
 
-<image src="./r1-conf.PNG" alt="R1">  
+<image src="./r2-conf.PNG" alt="R1">  
 
   R1 DHCP настройки:  
 
